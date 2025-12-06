@@ -11,7 +11,7 @@
             bindings = <
 &kp Q               &kp L         &kp U           &kp COMMA    &kp PERIOD                                                                 &kp F        &kp W  &kp R    &kp Y  &kp P
 &mt LEFT_CONTROL E  &kp I         &mt LEFT_ALT A  &lt 5 O      &kp MINUS      &mo 5                            &kp BACKSLASH              &kp K        &kp T  &lt 2 N  &kp S  &mt RIGHT_SHIFT H
-&kp Z               &kp X         &kp C           &kp V        &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M    &kp J  &kp B
+&mt LEFT_SHIFT Z    &kp X         &kp C           &kp V        &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M    &kp J  &kp B
 &mt LCTRL ESCAPE    &kp LEFT_ALT  &kp CAPSLOCK    &lt 3 ENTER  &kp BACKSPACE  &mt LEFT_COMMAND LANGUAGE_2      &mt LEFT_SHIFT LANGUAGE_1  &lt 4 SPACE                         &to 2
             >;
         };
@@ -20,7 +20,7 @@
             bindings = <
 &kp Q             &kp L         &kp U           &kp COMMA    &kp PERIOD                                                                 &kp F        &kp W  &kp R    &kp Y  &kp P
 &mt LEFT_WIN E    &kp I         &mt LEFT_ALT A  &lt 5 O      &kp MINUS      &mo 5                            &kp BACKSLASH              &kp K        &kp T  &lt 2 N  &kp S  &mt RIGHT_SHIFT H
-&kp Z             &kp X         &kp C           &kp V        &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M    &kp J  &kp B
+&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V        &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M    &kp J  &kp B
 &mt LCTRL ESCAPE  &kp LEFT_ALT  &kp CAPSLOCK    &lt 3 ENTER  &kp BACKSPACE  &mt LEFT_CONTROL LANGUAGE_2      &mt LEFT_SHIFT LANGUAGE_1  &lt 4 SPACE                         &to 2
             >;
         };
