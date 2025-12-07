@@ -5,13 +5,21 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
+        modtap500ms: modtap500ms {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "MODTAP500MS";
             #binding-cells = <2>;
-            hold-trigger-key-positions = <10 22 33 21>;
-            tapping-term-ms = <50>;
+            tapping-term-ms = <500>;
             bindings = <&mt>, <&kp>;
+        };
+
+        layertap500ms: layertap500ms {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYERTAP500MS";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
         };
     };
 
@@ -20,10 +28,10 @@
 
         default_layer_mac {
             bindings = <
-&kp Q               &kp L         &kp U           &kp COMMA    &kp PERIOD                                                                 &kp F        &kp W  &kp R    &kp Y  &kp P
-&mt LEFT_CONTROL E  &kp I         &mt LEFT_ALT A  &lt 6 O      &kp MINUS      &mo 6                            &kp BACKSLASH              &kp K        &kp T  &lt 4 N  &kp S  &mt RIGHT_GUI H
-&mt LEFT_SHIFT Z    &kp X         &kp C           &kp V        &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&mt LCTRL ESCAPE    &kp LEFT_ALT  &kp CAPSLOCK    &lt 2 ENTER  &kp BACKSPACE  &mt LEFT_COMMAND LANGUAGE_2      &mt LEFT_SHIFT LANGUAGE_1  &lt 3 SPACE                         &to 4
+&kp Q                        &kp L         &kp U                    &kp COMMA           &kp PERIOD                                                                 &kp F        &kp W  &kp R               &kp Y  &kp P
+&modtap500ms LEFT_CONTROL E  &kp I         &modtap500ms LEFT_ALT A  &layertap500ms 6 O  &kp MINUS      &mo 6                            &kp BACKSLASH              &kp K        &kp T  &layertap500ms 4 N  &kp S  &modtap500ms RIGHT_GUI H
+&modtap500ms LEFT_SHIFT Z    &kp X         &kp C                    &kp V               &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M               &kp J  &modtap500ms RIGHT_SHIFT B
+&mt LCTRL ESCAPE             &kp LEFT_ALT  &kp CAPSLOCK             &lt 2 ENTER         &kp BACKSPACE  &mt LEFT_COMMAND LANGUAGE_2      &mt LEFT_SHIFT LANGUAGE_1  &lt 3 SPACE                                    &to 4
             >;
         };
 
