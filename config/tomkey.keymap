@@ -10,16 +10,16 @@
         default_layer_mac {
             bindings = <
 &kp Q               &kp L         &kp U           &kp COMMA    &kp PERIOD                                                                 &kp F        &kp W  &kp R    &kp Y  &kp P
-&mt LEFT_CONTROL E  &kp I         &mt LEFT_ALT A  &lt 5 O      &kp MINUS      &mo 5                            &kp BACKSLASH              &kp K        &kp T  &lt 3 N  &kp S  &mt RIGHT_SHIFT H
+&mt LEFT_CONTROL E  &kp I         &mt LEFT_ALT A  &lt 6 O      &kp MINUS      &mo 6                            &kp BACKSLASH              &kp K        &kp T  &lt 3 N  &kp S  &mt RIGHT_SHIFT H
 &mt LEFT_SHIFT Z    &kp X         &kp C           &kp V        &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M    &kp J  &kp B
-&mt LCTRL ESCAPE    &kp LEFT_ALT  &kp CAPSLOCK    &lt 2 ENTER  &kp BACKSPACE  &mt LEFT_COMMAND LANGUAGE_2      &mt LEFT_SHIFT LANGUAGE_1  &lt 4 SPACE                         &to 3
+&mt LCTRL ESCAPE    &kp LEFT_ALT  &kp CAPSLOCK    &lt 2 ENTER  &kp BACKSPACE  &mt LEFT_COMMAND LANGUAGE_2      &mt LEFT_SHIFT LANGUAGE_1  &lt 5 SPACE                         &to 3
             >;
         };
 
         windows {
             bindings = <
 &kp Q             &kp L         &kp U           &kp COMMA    &kp PERIOD                                                                 &kp F        &kp W  &kp R    &kp Y  &kp P
-&mt LEFT_WIN E    &kp I         &mt LEFT_ALT A  &lt 5 O      &kp MINUS      &mo 5                            &kp BACKSLASH              &kp K        &kp T  &lt 4 N  &kp S  &mt RIGHT_SHIFT H
+&mt LEFT_WIN E    &kp I         &mt LEFT_ALT A  &lt 6 O      &kp MINUS      &mo 6                            &kp BACKSLASH              &kp K        &kp T  &lt 4 N  &kp S  &mt RIGHT_SHIFT H
 &mt LEFT_SHIFT Z  &kp X         &kp C           &kp V        &kp TAB        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET          &kp G        &kp D  &kp M    &kp J  &kp B
 &mt LCTRL ESCAPE  &kp LEFT_ALT  &kp CAPSLOCK    &lt 2 ENTER  &kp BACKSPACE  &mt LEFT_CONTROL LANGUAGE_2      &mt LEFT_SHIFT LANGUAGE_1  &lt 5 SPACE                         &to 4
             >;
@@ -34,12 +34,21 @@
             >;
         };
 
-        MOUSE {
+        MOUSE_for_mac {
             bindings = <
 &trans     &kp F7        &kp F8            &kp F9  &kp F12                        &trans    &kp LG(C)  &trans  &kp LG(V)  &trans
 &trans     &kp F4        &kp F5            &kp F6  &kp F11  &trans      &trans    &trans    &mkp MB1   &mo 2   &mkp MB2   &trans
 &trans     &kp F1        &kp F2            &kp F3  &kp F10  &trans      &trans    &trans    &trans     &trans  &trans     &trans
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans  &trans   &trans      &mkp MB5  &mkp MB4                                &to 0
+            >;
+        };
+
+        mouse_for_windows {
+            bindings = <
+&trans     &kp F7        &kp F8            &kp F9  &kp F12                        &trans    &kp LG(C)  &trans  &kp LG(V)  &trans
+&trans     &kp F4        &kp F5            &kp F6  &kp F11  &trans      &trans    &trans    &mkp MB1   &mo 2   &mkp MB2   &trans
+&trans     &kp F1        &kp F2            &kp F3  &kp F10  &trans      &trans    &trans    &trans     &trans  &trans     &trans
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans  &trans   &trans      &mkp MB5  &mkp MB4                                &tog 1
             >;
         };
 
@@ -52,7 +61,7 @@
             >;
         };
 
-        layer_6 {
+        setting {
             bindings = <
 &kp LG(Q)   &kp LC(W)  &trans        &trans     &trans                      &trans  &tog 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &kp ESCAPE  &trans     &kp LC(C)     &trans     &trans  &trans      &trans  &trans  &trans  &trans        &trans        &trans
