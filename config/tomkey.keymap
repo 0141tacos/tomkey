@@ -82,7 +82,7 @@
 
         setting {
             bindings = <
-&kp LG(Q)   &kp LC(W)  &trans        &trans     &trans                      &trans  &to 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LG(Q)   &kp LC(W)  &trans        &trans     &trans                      &trans  &to 1   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 4
 &kp ESCAPE  &trans     &kp LC(C)     &trans     &trans  &trans      &trans  &trans  &trans  &trans        &trans        &trans
 &kp LG(Z)   &kp LG(X)  &kp CAPSLOCK  &kp LG(V)  &trans  &trans      &trans  &trans  &trans  &to 0         &trans        &trans
 &trans      &trans     &trans        &trans     &trans  &trans      &trans  &trans                                      &trans
