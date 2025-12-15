@@ -25,6 +25,22 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        comb_jp {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        comb_en {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <25 24>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
