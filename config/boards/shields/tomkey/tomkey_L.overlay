@@ -36,7 +36,7 @@
 &trackball_listener {
     status = "okay";
     // 以下はトラックボールに触れられた時にレイヤー4を3000ms有効にするというコード
-    input-processors = <&zip_temp_layer 4 3000>;
+    input-processors = <&zip_temp_layer 4 4000>;
 
     scroll {
         layers = <2>;
