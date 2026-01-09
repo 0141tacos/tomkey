@@ -21,10 +21,22 @@
     };
 };
 
+&zip_temp_layer {
+    excluded-positions = <
+        // T（右クリック）,N（左クリック）,S（スクロール）のキー
+        19
+        20
+        21
+        // D（戻る）,M（進む） 
+        31
+        32
+    >;
+};
+
 &trackball_listener {
     status = "okay";
-    // 以下はトラックボールに触れられた時にレイヤー1を400ms有効にするというコード？
-    // input-processors = <&zip_temp_layer 1 400>;
+    // 以下はトラックボールに触れられた時にレイヤー4を3000ms有効にするというコード
+    input-processors = <&zip_temp_layer 4 3000>;
 
     scroll {
         layers = <2>;
