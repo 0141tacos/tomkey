@@ -24,6 +24,7 @@
 &zip_temp_layer {
     excluded-positions = <
         // T（右クリック）,N（左クリック）,S（スクロール）のキー
+        8
         19
         20
         21
