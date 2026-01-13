@@ -23,8 +23,6 @@
 
 &zip_temp_layer {
     excluded-positions = <
-        // R（シフト）
-        7
         // T（右クリック）
         18
         // N（左クリック）
